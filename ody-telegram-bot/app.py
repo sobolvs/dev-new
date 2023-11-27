@@ -61,7 +61,7 @@ if __name__ == '__main__':
 
     app.add_handler(CommandHandler('start', start_command))
     app.add_handler(CommandHandler('help', help_command))
-    app.add_handler(CommandHandler('send task', send_task_command))
+    app.add_handler(CommandHandler('send_task', send_task_command))
 
     # Messages
     app.add_handler(MessageHandler(filters.TEXT, handle_message))
